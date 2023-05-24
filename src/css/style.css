@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&display=swap');
+
+body {
+    font-family: 'Chivo', sans-serif;
+    min-height: 100vh;
+    background: url(../images/desktop/bg-pattern-dots.svg) bottom right no-repeat,
+            url(../images/desktop/image-host.jpg) right no-repeat;
+    padding: 7% 10%;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.images-mobile {
+    display: none;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+.info {
+    margin-right: 30%;
+    background: var(--black);
+    padding: 1.875rem;
+}
+
+.info h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: var(--green);
+    font-weight: 300;
+    margin-bottom: 1.875rem;
+}
+
+.info h1 span {
+    color: var(--white);
+}
+
+.info .form {
+    position: relative;
+}
+
+.info .error {
+    margin-bottom: 3.125rem;
+    color: var(--error-red);
+    font-size: 0.9rem;
+}
+
+.info p {
+    color: var(--light-grey);
+    font-size: 1.125rem;
+    margin-bottom: 2.5rem;
+}
+
+#email {
+    font-family: 'Chuvo', sans-serif;
+    padding: 1.25rem;
+    border-radius: 6.25rem;
+    background: var(--dark-grey);
+    font-weight: 700;
+    color: var(--light-grey);
+    width: 90%;
+}
+
+#submit {
+    font-family: 'Chuvo', sans-serif;
+    background: var(--green);
+    padding: 1.0625rem 2.5rem;
+    position: absolute;
+    border-radius: 6.25rem;
+    right: 11%;
+    top: 5%;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+#submit:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+}
+
+.images {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
